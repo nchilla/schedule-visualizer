@@ -256,7 +256,7 @@ var ScheduleRenderer = function () {
 }();
 
 $(document).ready(function () {
-	var renderer = new ScheduleRenderer(Snap("#canvas"), makeDayTime("7:00 AM"), makeDayTime("7:00 PM"), $("#canvas").width(), $("#canvas").height());
+	var renderer = new ScheduleRenderer(Snap("#canvas"), makeDayTime("6:00 AM"), makeDayTime("10:00 PM"), $("#canvas").width(), $("#canvas").height());
 	renderer.render();
 	var hash = window.location.hash ? window.location.hash.substring(1) : null;
 
