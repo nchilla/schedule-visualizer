@@ -118,7 +118,7 @@ class ScheduleRenderer {
 }
 
 $(document).ready(function() {
-	var renderer = new ScheduleRenderer(Snap("#canvas"), makeDayTime("7:00 AM"), makeDayTime("7:00 PM"), $("#canvas").width(), $("#canvas").height());
+	var renderer = new ScheduleRenderer(Snap("#canvas"), makeDayTime("5:00 AM"), makeDayTime("9:00 PM"), $("#canvas").width(), $("#canvas").height());
 	renderer.render();
 	var hash = window.location.hash ? window.location.hash.substring(1) : null;
 
